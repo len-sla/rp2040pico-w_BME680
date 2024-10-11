@@ -7,14 +7,14 @@
 - Compare programming paradigms:
   - Analyze C++ performance and low-level control
   - Explore Python's rapid prototyping capabilities
-- Showcase Pico-W's potential for IoT applications:
-  - Demonstrate sensor integration
-  - Highlight real-time data processing
+
 
 ## 2. Programming Environment Setup
 - Hardware preparation:
   - Connect Pico-W to development machine
   - Set up power supply and necessary cables
+ 
+    ![### source-result ](wiring-pico-probe.JPG)
 - Software configuration:
   - Install Visual Studio Code (VSCode)
   - Add Raspberry Pi Pico extension to VSCode
