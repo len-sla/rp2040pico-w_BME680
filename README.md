@@ -44,7 +44,21 @@ Instead of picture below shows how wiring should be done
 - Virtualization setup:
   - Ubuntu VM on Proxmox hypervisor was prepared with USB passthrough for USB-to-UART bridge
     ![### source-result ](passthrough.JPG)
-    
+
+
+    <p>Download the <a href="https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf">Pinout Diagram</a> (PDF)</p>
+</li>
+<li>
+<p>Download <a href="https://datasheets.raspberrypi.com/pico/RPi-Pico-R3-PUBLIC-20200119.zip">Design Files</a> (Cadence Allegro)</p>
+</li>
+<li>
+<p>Download <a href="https://datasheets.raspberrypi.com/pico/Pico-R3-step.zip">STEP File</a></p>
+</li>
+<li>
+<p>Download <a href="https://datasheets.raspberrypi.com/pico/Pico-R3-Fritzing.fzpz">Fritzing Part</a> for Raspberry Pi Pico</p>
+</li>
+<li>
+<p>Download <a href="https://datasheets.raspberrypi.com/pico/PicoH-Fritzing.fzpz">Fritzing Part</a> for Raspberry Pi Pico H</p>
 
 ## 4. Code Analysis (7cpp.cpp)
 Main function initializes the system, connects to Wi-Fi, sets up I2C communication, initializes a BME68X sensor, and starts a TCP server.
