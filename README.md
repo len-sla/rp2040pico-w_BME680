@@ -44,7 +44,8 @@ Instead of picture below shows how wiring should be done
     - Baud rate: 115200
 - Virtualization setup:
   - Ubuntu VM on Proxmox hypervisor was prepared with USB passthrough for USB-to-UART bridge
-  - 
+    ![### source-result ](passthrough.JPG)
+    
 
 ## 4. Code Analysis (7cpp.cpp)
 Main function initializes the system, connects to Wi-Fi, sets up I2C communication, initializes a BME68X sensor, and starts a TCP server.
