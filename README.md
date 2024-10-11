@@ -16,7 +16,7 @@
  
     ![### source-result ](wiring-pico-probe.JPG)
     In my particular case I used pico zero as it was the cheapest one as a Pico A
-    of course you need to connect to appropiate UART0 pins
+    of course you need to connect to appropiate UART1 pins on Pico A
     
     ![### source-result ](RP2040-Zero-details-7.jpg)
 
