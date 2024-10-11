@@ -34,8 +34,8 @@
   - Connect SWD lines between debugprobe and target Pico-W
 
 All other details could be found under:
-
-<p>Download the <a href="https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf">Pinout Diagram</a> (PDF)</p>
+https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html
+<p>Download the <a href="[Documentation](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)"></a></p>
 </li>
 <li>
 <p>Download <a href="https://datasheets.raspberrypi.com/pico/RPi-Pico-R3-PUBLIC-20200119.zip">Design Files</a> (Cadence Allegro)</p>
