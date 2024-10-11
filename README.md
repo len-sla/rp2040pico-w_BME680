@@ -36,18 +36,7 @@
 All other details could be found under:
 https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html
 <p>Download the <a href="[Documentation](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)"></a></p>
-</li>
-<li>
-<p>Download <a href="https://datasheets.raspberrypi.com/pico/RPi-Pico-R3-PUBLIC-20200119.zip">Design Files</a> (Cadence Allegro)</p>
-</li>
-<li>
-<p>Download <a href="https://datasheets.raspberrypi.com/pico/Pico-R3-step.zip">STEP File</a></p>
-</li>
-<li>
-<p>Download <a href="https://datasheets.raspberrypi.com/pico/Pico-R3-Fritzing.fzpz">Fritzing Part</a> for Raspberry Pi Pico</p>
-</li>
-<li>
-<p>Download <a href="https://datasheets.raspberrypi.com/pico/PicoH-Fritzing.fzpz">Fritzing Part</a> for Raspberry Pi Pico H</p>
+
 
 
 - UART bridge configuration:
