@@ -1,6 +1,6 @@
 # RP2040 Pico-W Project with BME680 Sensor
 ![### source-result ](pico-w.JPG)
-![### source-result ](picow.mp4)
+![](picow.mp4)
 ## 1. Project Goal
 - Evaluate the RP2040 Pico-W capabilities:
   - Test processing power and memory management
