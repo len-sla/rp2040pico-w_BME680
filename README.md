@@ -22,9 +22,8 @@
 
     
 - Software configuration:
-  - Install Visual Studio Code (VSCode)
-  - Add Raspberry Pi Pico extension to VSCode
-  - Configure Pico SDK and toolchain
+  - Add Raspberry Pi Pico extension to VSCode and Pico SDK and toolchain are automatically confugred
+  
 - Debugging tools:
   - Set up OpenOCD for on-chip debugging
   - Configure GDB for breakpoint debugging
