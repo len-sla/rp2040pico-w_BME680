@@ -87,5 +87,7 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 - Scalability:
   - Design for multiple sensor support
   - Implement efficient data aggregation before transmission
+ 
+  - ![### source-result ](th-521998814.jpg)
 
 Note: The extensive debugging code in 7cpp.cpp was crucial in identifying and resolving I2C initialization issues with the BME680 sensor, highlighting the importance of thorough error checking in embedded systems development.
