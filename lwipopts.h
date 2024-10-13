@@ -1,6 +1,10 @@
 #ifndef __LWIPOPTS_H__
 #define __LWIPOPTS_H__
 
+// New definitions for increased memory allocation to zostalo dodane
+#define MEMP_NUM_SYS_TIMEOUT 16
+#define MEM_SIZE (32 * 1024)
+
 // Common settings used in most of the pico_w examples
 // (see https://www.nongnu.org/lwip/2_1_x/group__lwip__opts.html for details)
 
