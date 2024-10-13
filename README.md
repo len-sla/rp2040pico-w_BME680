@@ -9,7 +9,7 @@
   - Analyze C++ performance and low-level control
   - Explore Python's rapid prototyping capabilities
 
-
+![### source-result ](picow1.gif) 
 ## 2. Programming Environment Setup
 - Hardware preparation:
   - Connect Pico-W to development machine
@@ -90,5 +90,5 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
   - Implement efficient data aggregation before transmission
  
   - ![### source-result ](th-1521998814.jpg)
-
+ 
 Note: The extensive debugging code in 7cpp.cpp was crucial in identifying and resolving I2C initialization issues with the BME680 sensor, highlighting the importance of thorough error checking in embedded systems development.
