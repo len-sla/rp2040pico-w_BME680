@@ -2,7 +2,7 @@
 ![### source-result ](pico-w.JPG)
 ![](picow.mp4)
 ## 1. Project Goal
-- Evaluate the RP2040 Pico-W capabilities:
+- Evaluating the RP2040 Pico-W capabilities:
   - Test processing power and memory management
   - Assess Wi-Fi connectivity features
 - Compare programming paradigms:
