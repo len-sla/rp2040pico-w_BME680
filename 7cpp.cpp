@@ -49,8 +49,8 @@ bool is_message_processing_complete();
 
 
 
-const char WIFI_SSID[] = "D2";
-const char WIFI_PASSWORD[] = "#DS18B20#";
+const char WIFI_SSID[] = "yuor id ";
+const char WIFI_PASSWORD[] = "your password";
 
 static mqtt_client_t* mqtt_client;
 static ip_addr_t mqtt_server_ip;
