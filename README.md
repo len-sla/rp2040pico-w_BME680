@@ -67,10 +67,10 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
    - I2C configuration details
  - MQTT Integration:
   - Implemented MQTT client library 
-  - Develop data serialization for sensor readings
+
 - Data flow:
   - Publishing sensor data to specific MQTT topics( domoticz/in)
-  - Subscribe to control topics for remote sensor configuration    
+  - Subscribing to topics for remote sensor configuration    
 2. A web server that serves sensor data to connected clients
 
 
