@@ -81,14 +81,16 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 - The BME68X sensor is likely an environmental sensor for measuring temperature, humidity, pressure, and gas resistance.
 
 ## 5. Future Enhancements
-- DMA at the moment is not working properly 
+- DMA at the moment is not working properly
+- 
 
-- Security considerations:
-  - Implement TLS for MQTT connections
-  - Develop authentication mechanism for MQTT client
+t
 - Scalability:
   - Design for multiple sensor support
   - Implement efficient data aggregation before transmission
+  - try to implement TinML where trained quantised 7bit tflight model will predict for example
+  - cloud coverage based on preassure, temperature and humidty
+  - model trained on historical data for particular place
  
   - ![### source-result ](th-1521998814.jpg)
  
