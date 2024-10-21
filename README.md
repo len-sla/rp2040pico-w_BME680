@@ -82,13 +82,11 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 
 ## 5. Future Enhancements
 - DMA at the moment is not working properly
-- 
 
-t
 - Scalability:
   - Design for multiple sensor support
   - Implement efficient data aggregation before transmission
-  - try to implement TinML where trained quantised 7bit tflight model will predict for example
+  - try to implement TinML where trained quantised 8bit tflight model will predict for example
   - cloud coverage based on preassure, temperature and humidty
   - model trained on historical data for particular place
  
