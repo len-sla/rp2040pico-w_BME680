@@ -72,8 +72,10 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
   - Publishing sensor data to specific MQTT topics( domoticz/in)
   - Subscribing to topics for remote sensor configuration    
 2. A web server that serves sensor data to connected clients
-4. TinyML trained quantised 8bit tflight model:
+
 ![### source-result ](picoweb.JPG)
+
+4. TinyML trained quantised 8bit tflight model:
    - baseed on reading from sensor doing weather prediction( cloud coverage)
    - Model based on neural network was trained( on historical data) with Colab and then quantised to 8bit
    - Then as a library used in to predict cloud cover  for photovoltaic predictions
