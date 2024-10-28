@@ -104,6 +104,47 @@ Not so many advanced examples with the usage of TCP, MQTT stack.<pb>
 - 3D scatter plot of historical data showing influence of humidity temperature and preassure on cloud cover
 ![ ](3dscatter-plot.JPG), ![ ](3dscatter-legend.JPG)
 
+converting model trained on Colab to INT8
+
+
+```
+# Set the converter
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+
+# Set optimization to use 8-bit quantization
+converter.optimizations = [tf.lite.Optimize.DEFAULT]
+
+# Convert the model
+tflite_model = converter.convert()
+
+```
+and saving as C header
+```
+# Update package list and install xxd
+!apt-get update && apt-get -qq install xxd
+
+# Convert the TFLite model to a C header file
+!xxd -i /content/drive/MyDrive/tinyML/output/3_quantized_model.tflite > /content/drive/MyDrive/tinyML/output/model.h
+
+# Display the contents of the header file
+!cat model.h
+
+```
+```
+Reading package lists... Done
+W: Skipping acquire of configured file 'main/source/Sources' as repository 'https://r2u.stat.illinois.edu/ubuntu jammy InRelease' does not seem to provide it (sources.list entry misspelt?)
+unsigned char _content_drive_MyDrive_tinyML_output_3_quantized_model_tflite[] = {
+  0x20, 0x00, 0x00, 0x00, 0x54, 0x46, 0x4c, 0x33, 0x00, 0x00, 0x00, 0x00,
+  0x14, 0x00, 0x20, 0x00, 0x1c, 0x00, 0x18, 0x00, 0x14, 0x00, 0x10, 0x00
+.
+,
+.
+.
+unsigned int _content_drive_MyDrive_tinyML_output_3_quantized_model_tflite_len = 16488;
+
+
+```
+
 - Challengies on the way:
   - Getting free training set https://open-meteo.com/ nice with possibility to choose location time span and other parameters  for the model to train
   - train small model with reasonable  results
