@@ -102,7 +102,49 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 Note: The extensive debugging code in 7cpp.cpp was crucial in identifying and resolving I2C initialization issues with the BME680 sensor, highlighting the importance of thorough error checking in embedded systems development.
 Not so many advanced examples with the usage of TCP, MQTT stack.<pb>
 - 3D scatter plot of historical data showing influence of humidity temperature and preassure on cloud cover
+```
+  <class 'pandas.core.frame.DataFrame'>
+RangeIndex: 87648 entries, 0 to 87647
+Data columns (total 5 columns):
+ #   Column                Non-Null Count  Dtype         
+---  ------                --------------  -----         
+ 0   time                  87648 non-null  datetime64[ns]
+ 1   temperature_2m        87648 non-null  float32       
+ 2   relative_humidity_2m  87648 non-null  float32       
+ 3   surface_pressure      87648 non-null  float32       
+ 4   cloud_cover           87648 non-null  float32       
+dtypes: datetime64[ns](1), float32(4)
+memory usage: 2.0 MB
+
+Model: "sequential_4"
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ dense_12 (Dense)                     │ (None, 64)                  │             256 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_13 (Dense)                     │ (None, 64)                  │           4,160 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_14 (Dense)                     │ (None, 1)                   │              65 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+
+ Total params: 13,445 (52.52 KB)
+
+ Trainable params: 4,481 (17.50 KB)
+
+ Non-trainable params: 0 (0.00 B)
+
+ Optimizer params: 8,964 (35.02 KB)
+
+
+```
+
 ![ ](3dscatter-plot.JPG), ![ ](3dscatter-legend.JPG)
+
+- trainig model  using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared. 
+
+![image](trainig.JPG)
+
 
 converting model trained on Colab to INT8
 
