@@ -101,7 +101,7 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
  
 Note: The extensive debugging code in 7cpp.cpp was crucial in identifying and resolving I2C initialization issues with the BME680 sensor, highlighting the importance of thorough error checking in embedded systems development.
 Not so many advanced examples with the usage of TCP, MQTT stack.<pb>
-3D scatter plot of historical data showing influence of humidity temperature and preassure on cloud cover
+- 3D scatter plot of historical data showing influence of humidity temperature and preassure on cloud cover
 ![ ](3dscatter-plot.JPG), ![ ](3dscatter-legend.JPG)
 
 - Challengies on the way:
