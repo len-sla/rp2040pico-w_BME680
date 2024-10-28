@@ -3,17 +3,17 @@
 ![](picow.mp4)
 ## 1. Project Goal
 - Evaluating the RP2040 Pico-W capabilities:
-  - Test processing power and memory management
+  - TPrepare complete toolchain including TinyML 
   - Assess Wi-Fi connectivity features
 - Compare programming paradigms:
   - Analyze C++ performance and low-level control
-  - Explore Python's rapid prototyping capabilities
+ 
 
 ![### source-result ](picow1.gif) 
 ## 2. Programming Environment Setup
 - Hardware preparation:
-  - Connect Pico-W to development machine
-  - Set up power supply and necessary cables
+  - Connect Pico-W to development machine(Proxmox Ubuntu VC)
+  - Set up I2C power supply and necessary cables
  
     ![### source-result ](wiring-pico-probe.JPG)
     In my particular case I used pico zero as it was the cheapest one as a Pico A
@@ -24,9 +24,10 @@
     
 - Software configuration:
   - Add Raspberry Pi Pico extension to VSCode and Pico SDK and toolchain are automatically confugred
+  - to use tfl-micro tensorflow light micro ned to clone git and first build 
   
 - Debugging tools:
-  - Set up OpenOCD for on-chip debugging
+  - Set up OpenOCD for on-chip debugging( a bit work around(SWD) compared to ESP32)
   - Configure GDB for breakpoint debugging
 
 ## 3. Advanced Hardware Configuration
