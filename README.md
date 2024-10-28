@@ -145,6 +145,8 @@ Model: "sequential_4"
 
 ![image](trainig.JPG)
 
+Of course results( metrics) are not the spectacular but that step was required to have proof of concept and whole toolchain.
+Later model could be finetuned, changed to be more robust
 
 converting model trained on Colab to INT8
 
