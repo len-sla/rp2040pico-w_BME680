@@ -102,8 +102,9 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 Note: The extensive debugging code in 7cpp.cpp was crucial in identifying and resolving I2C initialization issues with the BME680 sensor, highlighting the importance of thorough error checking in embedded systems development.
 Not so many advanced examples with the usage of TCP, MQTT stack.
 
-![### source-result ](3dscatter-plot.JPG)
-![### source-result ](3dscatter-legend.JPG)
+![ ](3dscatter-plot.JPG)
+
+![ ](3dscatter-legend.JPG)
 
 - Challengies on the way:
   - Getting free training set https://open-meteo.com/ nice with possibility to choose location time span and other parameters  for the model to train
