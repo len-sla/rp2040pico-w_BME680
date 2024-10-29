@@ -208,6 +208,6 @@ unsigned int _content_drive_MyDrive_tinyML_output_3_quantized_model_tflite_len =
   - Getting free training set https://open-meteo.com/ nice with possibility to choose location time span and other parameters  for the model to train
   - train small model with reasonable  results
   - Implement efficient data aggregation before transmission
-  - 
+  - linking tfl-micro to current project
 ### If you want more info
 lencz.sla@gmail.com
