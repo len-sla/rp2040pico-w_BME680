@@ -149,7 +149,7 @@ Of course results( metrics) are not the spectacular but that step was required t
 Later model could be finetuned, changed to be more robust
 
 converting model trained on Colab to INT8
-
+ ![### source-result ](picow_tiny.ml.gif)
 
 ```
 # Set the converter
