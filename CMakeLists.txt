@@ -12,34 +12,6 @@ if (EXISTS ${picoVscode})
     include(${picoVscode})
 endif()
 # ====================================================================================
-# == DO NEVER EDIT THE NEXT LINES for Raspberry Pi Pico VS Code Extension to work ==
-if(WIN32)
-    set(USERHOME $ENV{USERPROFILE})
-else()
-    set(USERHOME $ENV{HOME})
-endif()
-set(sdkVersion 2.0.0)
-set(toolchainVersion 13_2_Rel1)
-set(picotoolVersion 2.0.0)
-set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
-if (EXISTS ${picoVscode})
-    include(${picoVscode})
-endif()
-# ====================================================================================
-# == DO NEVER EDIT THE NEXT LINES for Raspberry Pi Pico VS Code Extension to work ==
-if(WIN32)
-    set(USERHOME $ENV{USERPROFILE})
-else()
-    set(USERHOME $ENV{HOME})
-endif()
-set(sdkVersion 2.0.0)
-set(toolchainVersion 13_2_Rel1)
-set(picotoolVersion 2.0.0)
-set(picoVscode ${USERHOME}/.pico-sdk/cmake/pico-vscode.cmake)
-if (EXISTS ${picoVscode})
-    include(${picoVscode})
-endif()
-# ====================================================================================
 cmake_minimum_required(VERSION 3.13)
 
 set(CMAKE_C_STANDARD 11)
@@ -58,6 +30,9 @@ set(PICO_BOARD pico_w CACHE STRING "Board type")
 # Include the Pico SDK
 include(${PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
+# Link to the correct TF Lite library
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/pico-tflmicro/build)
+
 project(7cpp C CXX ASM)
 
 # Initialize the Pico SDK
@@ -68,6 +43,8 @@ add_executable(7cpp
     bme68x.c
     mqtt.cpp
     uart_dma.cpp
+    cloud_predictor.cpp
+    model.cpp
 )
 
 pico_set_program_name(7cpp "7cpp")
@@ -90,6 +67,7 @@ target_link_libraries(7cpp
     pico_util
     hardware_dma
     pico_multicore
+    ${CMAKE_CURRENT_SOURCE_DIR}/pico-tflmicro/build/libpico-tflmicro.a
 )
 
 target_include_directories(7cpp PRIVATE
@@ -102,9 +80,9 @@ target_include_directories(7cpp PRIVATE
     ${PICO_SDK_PATH}/src/common/pico_stdlib/include
     ${PICO_SDK_PATH}/src/rp2_common/hardware_sync/include
     ${PICO_SDK_PATH}/src/common/pico_sync/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/pico-tflmicro/src
 )
 
-# Enable I2C debugging
 target_compile_definitions(7cpp PRIVATE
     PICO_I2C_DEBUG=1
 )
