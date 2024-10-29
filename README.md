@@ -12,7 +12,7 @@
 ![### source-result ](picow1.gif) 
 ## 2. Programming Environment Setup
 - Hardware preparation:
-  - Connect Pico-W to development machine(Proxmox Ubuntu VC)
+  - Connect Pico-W to development machine(Proxmox Ubuntu VC to stay on the safe side like with any experiments where hardware and software mistakes are nothing uncommon)
   - Set up I2C power supply and necessary cables
  
     ![### source-result ](wiring-pico-probe.JPG)
