@@ -71,8 +71,21 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 
 - Data flow:
   - Publishing sensor data to specific MQTT topics( domoticz/in)
-  - Subscribing to topics for remote sensor configuration    
+  - Subscribing to topics for remote sensor configuration
+ ```
+08:49:54:033 -> mqtt.cpp-DEBUG: Processing last fragment of MQTT message
+08:49:54:036 -> [mqtt] Received data: {"idx":243,"nvalue":0,"svalue":"65.80"}
+08:49:54:041 -> [mqtt] {"idx" 243,"nvalue":0,"svalue":"65.80"}
+08:49:54:045 -> [mqtt] 2001B36C
+08:49:54:046 -> [mqtt] Added to queue
+08:49:54:049 -> mqtt.cpp-lQueue stats: Count: 2, Head: 3, Tail: 1
+08:49:54:053 -> mqtt.cpp-DEBUG: -Incoming publish at topic pico_w_347e_in with total length 38
+08:49:54:061 -> mqtt.cpp-DEBUG: Entering mqtt_incoming_data_cb. Data length: 38, Flags: 1
+08:49:54:291 -> mqtt.cpp-line82 DEBUG: Checking queue for messages
+08:49:54:295 -> mqtt.cpp-lDEBUG: Attempting to pop from circular queue
+08:49:54:300 -> mqtt.cpp-lDEBUG: Pop successful. New tail: 2, count: 1
 2. A web server that serves sensor data to connected clients
+```
 
 ![### source-result ](picoweb.JPG)
 
