@@ -76,6 +76,8 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 
 ![### source-result ](picoweb.JPG)
 
+![### source-result ](picow_tiny.ml.gif)
+
 4. TinyML trained quantised 8bit tflight model:
    - baseed on reading from sensor doing weather prediction( cloud coverage)
    - Model based on neural network was trained( on historical data) with Colab and then quantised to 8bit
@@ -149,7 +151,7 @@ Of course results( metrics) are not the spectacular but that step was required t
 Later model could be finetuned, changed to be more robust
 
 converting model trained on Colab to INT8
- ![### source-result ](picow_tiny.ml.gif)
+ 
 
 ```
 # Set the converter
