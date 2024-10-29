@@ -86,7 +86,7 @@ Main function initializes the system, connects to Wi-Fi, sets up I2C communicati
 08:49:54:300 -> mqtt.cpp-lDEBUG: Pop successful. New tail: 2, count: 1
 2. A web server that serves sensor data to connected clients
 ```
-
+- Lightweight webserver to diplay current sensor values/( also sent to MQTT broker ) and stored/displayed in domoticz 
 ![### source-result ](picoweb.JPG)
 
 ![### source-result ](picow_tiny.ml.gif)
