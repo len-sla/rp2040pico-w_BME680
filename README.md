@@ -1,4 +1,4 @@
-# RP2040 Pico-W Project with Bosch BME680 Sensor
+# TinyML RP2040 Pico-W  with Bosch BME680 Sensor
 ![### source-result ](pico-w.JPG)
 ![](picow.mp4)
 ## 1. Project Goal
