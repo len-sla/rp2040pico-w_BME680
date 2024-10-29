@@ -204,6 +204,7 @@ unsigned int _content_drive_MyDrive_tinyML_output_3_quantized_model_tflite_len =
 
 ```
 
+ ### pico-tflmicro library linking:
 
 ```
 target_link_libraries(7cpp
