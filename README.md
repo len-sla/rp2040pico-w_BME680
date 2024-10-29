@@ -204,6 +204,38 @@ unsigned int _content_drive_MyDrive_tinyML_output_3_quantized_model_tflite_len =
 
 ```
 
+
+```
+target_link_libraries(7cpp
+    pico_stdlib
+    hardware_i2c
+    hardware_adc
+    pico_cyw43_arch_lwip_threadsafe_background
+    pico_lwip
+    pico_malloc
+    pico_runtime
+    hardware_rtc
+    hardware_gpio
+    pico_lwip_mqtt
+    pico_util
+    hardware_dma
+    pico_multicore
+    ${CMAKE_CURRENT_SOURCE_DIR}/pico-tflmicro/build/libpico-tflmicro.a //this was necessary change
+)
+
+target_include_directories(7cpp PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}/..
+    ${PICO_SDK_PATH}/src/rp2_common/hardware_adc/include
+    ${PICO_SDK_PATH}/src/rp2_common/hardware_rtc/include
+    ${PICO_SDK_PATH}/src/rp2_common/hardware_gpio/include
+    ${PICO_SDK_PATH}/src/rp2_common/hardware_dma/include
+    ${PICO_SDK_PATH}/src/common/pico_stdlib/include
+    ${PICO_SDK_PATH}/src/rp2_common/hardware_sync/include
+    ${PICO_SDK_PATH}/src/common/pico_sync/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/pico-tflmicro/src
+)
+```
 - Challengies on the way:
   - Getting free training set https://open-meteo.com/ nice with possibility to choose location time span and other parameters  for the model to train
   - train small model with reasonable  results
